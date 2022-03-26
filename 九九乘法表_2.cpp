@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int y, x;
+	for (x = 0; x <= 9; x++)
+	{
+		for (y = 0; y <= x; y++)
+		{
+			if (x == 0 && y == 0)
+				cout << "*" << "\t";
+			else if (x == 0)
+				cout << y << "\t";
+			else if (y == 0)
+				cout << x << "\t";
+			else
+				cout << x * y << "\t";
+		}
+		cout << endl;
+	}
+}
