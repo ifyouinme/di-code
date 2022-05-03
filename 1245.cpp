@@ -20,5 +20,5 @@ int main()
     }
     
     cout << fixed << setprecision(2) << (sum_1 + sum_2 + sum_3);
-    return 0
+    return 0;
 }
