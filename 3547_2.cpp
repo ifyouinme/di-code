@@ -5,13 +5,11 @@ void mystrcmp(const char *str1, const char *str2);
 
 int main()
 {
-    cout << "a";
     char str1[100] = {0};
     char str2[100] = {0};
     cin.getline(str1, sizeof(str1));
     cin.getline(str2, sizeof(str2));
     mystrcmp(str1, str2);
-    cout << sizeof(str1) << "a";
     return 0;
 }
 

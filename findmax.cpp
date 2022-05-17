@@ -3,11 +3,16 @@ using namespace std;
 
 int *findmax(int *arryay, int size, int *index)
 {
+    int flag = 0;
     for (int i = 1; i < size; i++)
     {
-       
-        
+       if(arryay[i]>arryay[flag])
+        {
+            flag= i;
+        }
     }
+    *index = flag;
+    return arryay + flag;
 }
 
 int main()
